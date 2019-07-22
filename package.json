@@ -17,7 +17,6 @@
     "gatsby-plugin-sharp": "^2.2.8",
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-sharp": "^2.2.4",
-    "netlify-lambda": "^1.5.0",
     "node-fetch": "^2.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -27,6 +26,9 @@
     "unsplash-js": "^5.0.0"
   },
   "devDependencies": {
+    "http-proxy-middleware": "^0.19.1",
+    "netlify-lambda": "^1.5.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2"
   },
   "keywords": [
