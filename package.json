@@ -18,11 +18,13 @@
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-sharp": "^2.2.4",
     "netlify-lambda": "^1.5.0",
+    "node-fetch": "^2.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-infinite-scroll-component": "^4.5.2"
+    "react-infinite-scroll-component": "^4.5.2",
+    "unsplash-js": "^5.0.0"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
