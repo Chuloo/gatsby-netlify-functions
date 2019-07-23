@@ -18,9 +18,9 @@ const ImageGallery = ({ images, loading, fetchImages }) => {
     >
       <div className="image-grid">
         {!loading
-          ? images.map((image, index) => (
-              <div className="image-item" key={index}>
-                <img src={image.urls.regular} />
+          ? images.map(image => (
+              <div className="image-item" key={image.id}>
+                <img src={image.urls.regular} alt={image.alt_description} />
               </div>
             ))
           : ""}
@@ -44,6 +44,7 @@ const InfiniteImages = () => {
     axios("/.netlify/functions/fetch").then(res => {
       setImages([...images, ...res.data.images])
       setLoading(false)
+      console.log(images)
     })
   }
   return (
