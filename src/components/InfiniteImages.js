@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import PropTypes from "prop-types"
 import axios from "axios"
 import InfiniteScroll from "react-infinite-scroll-component"
 import "./gallery.css"
@@ -50,6 +51,12 @@ const InfiniteImages = () => {
   return (
     <ImageGallery images={images} loading={loading} fetchImages={fetchImages} />
   )
+}
+
+ImageGallery.propTypes = {
+  images: PropTypes.array,
+  loading: PropTypes.bool,
+  fetchImages: PropTypes.func,
 }
 
 export default InfiniteImages
