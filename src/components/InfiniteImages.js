@@ -45,7 +45,6 @@ const InfiniteImages = () => {
     axios("/.netlify/functions/fetch").then(res => {
       setImages([...images, ...res.data.images])
       setLoading(false)
-      console.log(images)
     })
   }
   return (
